@@ -1,0 +1,37 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Максимум · Детейлинг</title><meta name="description" content="Демо-концепция сайта по открытой карточке 2ГИС."><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Golos+Text:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/static/sale/kit/kit.css"><link rel="stylesheet" href="/static/sale/kit/live.css">
+<style>
+:root{--bg:#0b0c0e;--ink:#eef0f2;--mut:#99a0a8;--acc:#ff4d12;--m:clamp(16px,4vw,48px)}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.55 "Golos Text",sans-serif}
+h1,h2,.u{font-family:Unbounded,sans-serif;font-weight:800;line-height:1;letter-spacing:-.02em;text-transform:uppercase}
+nav{position:absolute;z-index:5;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:22px var(--m);font-weight:500}nav a:last-child{color:var(--acc)}
+.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;background:#000;isolation:isolate}
+.mask{position:absolute;inset:0;background:#000;color:#fff;mix-blend-mode:multiply;display:flex;align-items:center;justify-content:center}
+.mask h1{font-size:15.2vw;white-space:nowrap}
+.sub{position:absolute;left:var(--m);right:var(--m);bottom:30px;display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.sub p{max-width:26em;color:var(--ink);font-size:19px}.btn{display:inline-block;background:var(--acc);color:#0b0c0e;padding:17px 30px;font-weight:700;transition:transform .2s}.btn:hover{transform:translateX(6px)}
+.cmp{position:relative;height:min(84vh,860px);overflow:hidden;background:#222;touch-action:pan-y;cursor:ew-resize}.cmp img{position:absolute;inset:0;width:100%;height:100%}
+.cmp .dirty{filter:saturate(.25) brightness(.62) contrast(.8) sepia(.5) blur(.6px);clip-path:inset(0 calc(100% - var(--x,50%)) 0 0)}
+.cmp .bar{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;background:#fff}.cmp .bar::after{content:"⟷";position:absolute;top:50%;left:50%;translate:-50% -50%;width:56px;height:56px;border-radius:50%;background:var(--acc);color:#0b0c0e;display:grid;place-items:center;font-size:24px}
+.cmp span{position:absolute;bottom:20px;padding:6px 12px;background:#0b0c0e;font-weight:500}.cmp .l{left:20px}.cmp .r{right:20px}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.st{padding:clamp(70px,10vw,130px) var(--m)}h2{font-size:clamp(34px,6.2vw,92px)}
+.pk{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid #2c3036}
+.pk>div{padding:28px 24px 34px;border-right:1px solid #2c3036;border-bottom:1px solid #2c3036;transition:background .25s,color .25s;display:flex;flex-direction:column;gap:12px;min-height:390px}
+.pk>div:first-child{padding-left:0}.pk>div:last-child{border-right:0}
+.pk .u{font-size:clamp(22px,2.3vw,32px)}.pk b{font:800 clamp(30px,3.4vw,48px)/1 Unbounded,sans-serif;margin-top:auto;color:var(--acc)}.pk li{color:var(--mut)}
+.fig{display:grid;grid-template-columns:1.2fr 1fr;min-height:70vh}.fig .shut{min-height:320px}.fig .tx{background:var(--acc);color:#0b0c0e;padding:clamp(28px,5vw,64px);display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.fig .n{font:800 clamp(72px,11vw,170px)/.9 Unbounded,sans-serif;letter-spacing:-.04em}.fig p{font-size:20px;max-width:22em}
+.ct{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:clamp(60px,8vw,100px) var(--m);align-items:end}.ct a.u{font-size:clamp(26px,3.6vw,54px)}.ct div{color:var(--mut)}
+@media(max-width:800px){.pk,.fig,.ct{grid-template-columns:1fr}.pk>div{border-right:0;padding-left:0;min-height:0}.pk b{margin-top:10px}.cmp{height:62vh}}
+</style><style>h1,.mask h1{font-size:clamp(34px,calc(150vw / 8),190px)!important;white-space:normal;overflow-wrap:anywhere;line-height:1}.demo-top{position:fixed;z-index:99;top:0;left:0;right:0;text-align:center;font:500 11px/20px system-ui,sans-serif;background:rgba(0,0,0,.65);color:#fff;letter-spacing:.02em}.demo-foot{padding:26px clamp(16px,4vw,48px) 90px;font:400 13px/1.6 system-ui,sans-serif;opacity:.75}.demo-own{padding:clamp(50px,7vw,90px) clamp(16px,4vw,48px);font:500 18px/1.5 system-ui,sans-serif;border-top:1px solid currentColor}.demo-own b{display:block;font-size:clamp(30px,5vw,56px);line-height:1.1;margin:8px 0}.mask h1{font-size:clamp(26px,calc(104vw / 8),150px)!important;overflow-wrap:normal}</style></head><body data-svc="Комплексная мойка|Мойка паром|Бесконтактная мойка|Химчистка салона|Мойка двигателя|Полировка кузова|До 5 машин" data-open="10-20" data-cta="Оставить заявку" data-gt="Фото для примера" data-g="g-auto-1:Кузов|g-auto-4:Детейлинг|g-auto-2:Блеск|g-auto-5:Покрытие|g-auto-3:Город"><div class="demo-top">Демо-концепция · Не официальный сайт</div>
+<nav aria-label="Меню"><span class="u" style="font-size:16px">Детейлинг</span><a href="#ct">Оставить заявку</a></nav>
+<header class="hero"><canvas data-shader="#0d0f12,#8b95a1,#ffffff" data-metal="1" aria-hidden="true"></canvas><div class="mask"><h1>Максимум</h1></div>
+<div class="sub"><p data-r=".3">Детейлинг, Уфа. Услуги, цены и заявка на одной странице.</p><a class="btn" href="#st">Услуги →</a></div></header>
+<main><section class="cmp" id="c" aria-label="Пример до и после"><img src="/static/sale/img/g-auto-1.jpg" alt=""><img class="dirty" src="/static/sale/img/g-auto-1.jpg" alt=""><div class="bar"></div><span class="l">Пример до</span><span class="r">Пример после</span><input type="range" min="0" max="100" value="50" aria-label="Положение шторки"></section>
+<section class="st" id="st"><h2 data-lines><span class="ln"><i>Услуги</i></span></h2><div class="pk"><div data-r><div class="u">Комплексная мойка</div><b>от 1 500 ₽</b></div><div data-r><div class="u">Мойка паром</div><b>цена по запросу</b></div><div data-r><div class="u">Бесконтактная мойка</div><b>цена по запросу</b></div><div data-r><div class="u">Химчистка салона</div><b>цена по запросу</b></div><div data-r><div class="u">Мойка двигателя</div><b>цена по запросу</b></div><div data-r><div class="u">Полировка кузова</div><b>цена по запросу</b></div></div></section>
+<section class="fig"><div class="shut" data-shut><img src="/static/sale/img/auto-2.jpg" alt="" style="height:100%"></div><div class="tx"><div class="n">5,0</div><p>Оценка 5,0 по 542 отзыва в 2ГИС</p></div></section>
+<section class="ct" id="ct"><a class="u" href="tel:+79174025542">+7 917 402 55 42</a><div>улица Рихарда Зорге, 19/1 к3, Октябрьский район</div><div>Ежедневно 10:00–20:00</div></section></main>
+<section class="demo-own"><div>Для владельца</div><b>14 000 ₽ под ключ</b><div>Предоплаты нет: платите, когда увидите готовый сайт с вашими ценами и скажете «да».</div></section>
+<footer class="demo-foot">Демо-концепция сайта по открытой карточке 2ГИС. Не официальный сайт «Максимум». Фото для примера, подставим ваши. <a href="/static/sale/credits.html">Источники фото</a>.</footer>
+<script src="/static/sale/kit/motion.js"></script><script src="/static/sale/kit/lenis.js"></script><script src="/static/sale/kit/kit.js"></script><script src="/static/sale/kit/live.js"></script><script>c.querySelector('input').oninput=e=>c.style.setProperty('--x',e.target.value+'%')</script></body></html>
